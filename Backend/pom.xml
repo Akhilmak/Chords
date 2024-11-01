@@ -74,6 +74,7 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<finalName>human-music</finalName>
 				</configuration>
 			</plugin>
 		</plugins>

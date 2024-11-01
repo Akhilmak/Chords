@@ -54,7 +54,7 @@ public class SongServiceImpl implements SongService {
                 if (res.has("downloadUrl") && res.get("downloadUrl").isArray() && !res.get("downloadUrl").isEmpty()) {
                     song.setDownloadUrl(res.get("downloadUrl").get(2).get("url").asText()); // Get the first download URL
                 }
-                
+
                 songs.add(song);
             }
             return songs;
