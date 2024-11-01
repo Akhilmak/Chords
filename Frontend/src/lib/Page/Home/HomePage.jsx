@@ -29,7 +29,7 @@ const HomePage = () => {
   const handleSearch=async ()=>{
     if(query.trim()){
       const fetchedSongs=await dispatch(getSongsFromQuery(query));
-      console.log(fetchedSongs)
+      // console.log(fetchedSongs)
       setSongs(fetchedSongs);
     }
   }

@@ -9,7 +9,7 @@ export const getSongsFromQuery = (query) => async (dispatch) => {
 
   try {
     const response=await axios.get(`${baseUrl}/search/songs/${query}`);
-    console.log(response.data);
+    // console.log(response.data);
     dispatch({type:FETCH_SONGS_SUCCESS,payload:response.data});
     return response.data
   } catch (error) {
