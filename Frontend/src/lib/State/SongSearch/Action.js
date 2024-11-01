@@ -11,7 +11,7 @@ export const getSongsFromQuery = (query) => async (dispatch) => {
     const response=await axios.get(`${baseUrl}/search/songs/${query}`);
     console.log(response.data);
     dispatch({type:FETCH_SONGS_SUCCESS,payload:response.data});
-    return response.data;
+    return response.data
   } catch (error) {
     console.log(error);
     dispatch({type:FETCH_SONGS_ERROR,payload:error.message});
