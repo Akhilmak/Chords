@@ -10,7 +10,7 @@ public class AppConfig implements WebMvcConfigurer {
     @Override
     public  void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:5173/","https://human-music.vercel.app/")
+                .allowedOrigins("http://localhost:5173/","https://human-music.vercel.app/","http://localhost:3000/")
                 .allowedMethods("*")
                 .allowedHeaders("*")
                 .allowCredentials(true);
