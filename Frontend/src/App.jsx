@@ -9,11 +9,11 @@ const App = () => {
 
   return (
     <div className=" flex">
-      <Sidebar className="w-full md:w-1/4" />
+      <Sidebar className="" />
       <div className="flex-1 flex flex-col bg-gradient-to-br from-black to-[#121286]">
-        <Searchbar className="w-full"/>
+        <Searchbar className=""/>
 
-        <div className="px-6 h-[calc(100vh-72px)]  overflow-y-hidden hide-scrollbar flex xl:flex-row flex-col-reverse">
+        <div className="px-6 h-[90vh]  overflow-y-scroll hide-scrollbar flex  flex-col-reverse">
           <div className="flex-1 h-fit pb-40">
             <Routes>
               <Route path="/" element={<Discover />} />
